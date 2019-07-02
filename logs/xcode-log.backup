@@ -1,0 +1,55 @@
+Loading network plugin   
+2019-07-02 09:20:12.084064+0530 App[481:58380] CAPKeyboard: resize mode - native
+⚡️  Loading app at capacitor://localhost...   
+Reachable via WiFi   
+APP ACTIVE   
+⚡️  [log] - onscript loading complete   
+To Native Cordova ->    
+File   
+requestAllPaths   
+File711549343   
+["options": []]   
+⚡️  [log] - Angular is running in the development mode. Call enableProdMode() to enable the production mode.   
+⚡️  [log] - Ionic Native: deviceready event fired after 513 ms   
+⚡️  [log] - [LOG] SSL Pinning Starts   
+To Native Cordova ->    
+CordovaHttpPlugin   
+setServerTrustMode   
+CordovaHttpPlugin711549344   
+["options": [pinned]]   
+⚡️  WebView loaded   
+⚡️  [log] - [SUCCESS] SSL Pinning Works!   
+⚡️  To Native ->    
+SplashScreen   
+hide   
+13154678   
+⚡️  TO JS   
+{}   
+To Native Cordova ->    
+CordovaHttpPlugin   
+get   
+CordovaHttpPlugin711549345   
+["options": [https://reqres.in/api/users/2, {
+}, 60, 1, text]]   
+⚡️  To Native ->    
+App   
+addListener   
+13154679   
+2019-07-02 09:20:13.211085+0530 App[481:58424] TIC SSL Trust Error [1:0x280002100]: 3:0
+2019-07-02 09:20:13.228677+0530 App[481:58424] NSURLSession/NSURLConnection HTTP load failed (kCFStreamErrorDomainSSL, -9813)
+2019-07-02 09:20:13.228721+0530 App[481:58424] Task <46E01436-B71E-421D-B8F0-584EBEBEDD56>.<1> HTTP load failed (error code: -1202 [3:-9813])
+2019-07-02 09:20:13.228908+0530 App[481:58418] Task <46E01436-B71E-421D-B8F0-584EBEBEDD56>.<1> finished with error - code: -1202
+2019-07-02 09:20:13.231665+0530 App[481:58415] Task <46E01436-B71E-421D-B8F0-584EBEBEDD56>.<1> load failed with error Error Domain=NSURLErrorDomain Code=-1202 "The certificate for this server is invalid. You might be connecting to a server that is pretending to be “reqres.in” which could put your confidential information at risk." UserInfo={NSLocalizedRecoverySuggestion=Would you like to connect to the server anyway?, _kCFStreamErrorDomainKey=3, NSErrorPeerCertificateChainKey=(
+    "<cert(0x10408e200) s: sni96286.cloudflaressl.com i: COMODO ECC Domain Validation Secure Server CA 2>",
+    "<cert(0x104067800) s: COMODO ECC Domain Validation Secure Server CA 2 i: COMODO ECC Certification Authority>",
+    "<cert(0x10408ee00) s: COMODO ECC Certification Authority i: AddTrust External CA Root>"
+), NSErrorClientCertificateStateKey=0, NSErrorFailingURLKey=https://reqres.in/api/users/2, NSErrorFailingURLStringKey=https://reqres.in/api/users/2, NSUnderlyingError=0x283b578d0 {Error Domain=kCFErrorDomainCFNetwork Code=-1202 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, kCFStreamPropertySSLPeerTrust=<SecTrustRef: 0x28070d4d0>, _kCFNetworkCFStreamSSLErrorOriginalValue=-9813, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9813, kCFStreamPropertySSLPeerCertificates=(
+    "<cert(0x10408e200) s: sni96286.cloudflaressl.com i: COMODO ECC Domain Validation Secure Server CA 2>",
+    "<cert(0x104067800) s: COMODO ECC Domain Validation Secure Server CA 2 i: COMODO ECC Certification Authority>",
+    "<cert(0x10408ee00) s: COMODO ECC Certification Authority i: AddTrust External CA Root>"
+)}}, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <46E01436-B71E-421D-B8F0-584EBEBEDD56>.<1>"
+), _kCFStreamErrorCodeKey=-9813, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <46E01436-B71E-421D-B8F0-584EBEBEDD56>.<1>, NSURLErrorFailingURLPeerTrustErrorKey=<SecTrustRef: 0x28070d4d0>, NSLocalizedDescription=The certificate for this server is invalid. You might be connecting to a server that is pretending to be “reqres.in” which could put your confidential information at risk.} [-1202]
+⚡️  [log] - -2   
+⚡️  [log] - The certificate for this server is invalid. You might be connecting to a server that is pretending to be “reqres.in” which could put your confidential information at risk.   
+⚡️  [log] - undefined   
