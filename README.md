@@ -118,34 +118,40 @@ angular.json
 
 ## Terminal Commands
 
-### install Ionic Native HTTP plugin: https://ionicframework.com/docs/native/http
+### Install Ionic Native HTTP plugin: https://ionicframework.com/docs/native/http
 
 ```
 ionic cordova plugin add cordova-plugin-advanced-http
 npm install @ionic-native/http
 ```
 
-### build project
+### Build project
 
 ```
 ionic build
 ```
 
-### add platform
+### Add platform
 ```
 npx cap add ios
 npx cap add android
 ```
 
-### copy/sync built web assets to native app
+### Copy/sync built web assets to native app
 ```
 npx cap copy
 npx cap sync
 ```
 
-### open native app on native IDE with Capacitor
+### **[Workaround]** Copy certificate files to a newly-created assets directory which is visible to Cordova plugin builds - https://github.com/silkimen/cordova-plugin-advanced-http/issues/168
+```
+// android
+mkdir -p android/capacitor-cordova-android-plugins/src/main/assets/www/
+cp -r android/app/src/main/assets/public/certificates android/capacitor-cordova-android-plugins/src/main/assets/www/certificates
+```
+
+### Open native app on native IDE with Capacitor
 ```
 npx cap open ios
 npx cap open android
 ```
-
